@@ -1,0 +1,7 @@
+python/reasoning_trace.html
+typescript/reasoning_trace.html
+__pycache__/
+*.pyc
+node_modules/
+*.js
+*.d.ts
