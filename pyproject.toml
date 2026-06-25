@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reasoning-trace"
+version = "0.1.0"
+description = "Stream LLM tokens with per-token entropy — see exactly where the model is uncertain"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "Aditi Chatterji", email = "aditi@aditichatterji.com" }]
+keywords = ["llm", "interpretability", "entropy", "logprobs", "visualization", "tokens"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = []
+
+[project.scripts]
+rt = "python.trace:main"
+
+[project.urls]
+Homepage = "https://github.com/adu3110/reasoning-trace"
+Repository = "https://github.com/adu3110/reasoning-trace"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["python*"]
